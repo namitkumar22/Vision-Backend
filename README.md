@@ -1,3 +1,13 @@
+---
+title: Vision Backend
+emoji: 👁️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+app_port: 7860
+---
+
 # Vision Backend
 
 FastAPI backend for the Vision Diabetic Retinopathy Detection System.
