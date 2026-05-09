@@ -29,7 +29,7 @@ def load_model():
         print(f"[WARN] Model file not found at: {model_path}")
         return
 
-    checkpoint = torch.load(model_path, map_location=_device)
+    checkpoint = torch.load(model_path, map_location=_device, weights_only=False)
 
     # Handle both raw state_dict and wrapped checkpoints
     if isinstance(checkpoint, dict) and "model_state_dict" in checkpoint:
